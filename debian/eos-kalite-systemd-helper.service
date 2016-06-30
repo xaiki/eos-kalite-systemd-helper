@@ -1,0 +1,8 @@
+[Unit]
+Description=KA Lite Server
+
+[Service]
+ExecStart=/usr/bin/flatpak run --env="LISTEN_PID=true" --command="kalite" org.learningequality.kalite start --foreground
+User=kalite
+
+PrivateTmp=yes
