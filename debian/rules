@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+dest=debian/tmp
+bindir=${dest}/usr/bin
+
+%:
+	dh $@ --with systemd
+
+override_dh_auto_install:
+	mkdir -p ${bindir}
+	cp -a src/kalite-flatpak-wrapper.sh ${bindir}/kalite-flatpak-wrapper
+	chmod +x ${bindir}/kalite-flatpak-wrapper

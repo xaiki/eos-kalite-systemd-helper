@@ -1,0 +1,8 @@
+[Unit]
+Description=KALite HTTPd
+
+[Service]
+ExecStart=/usr/bin/kalite-flatpak-wrapper
+User=kalite
+
+PrivateTmp=yes
