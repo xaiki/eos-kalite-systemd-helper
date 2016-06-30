@@ -1,14 +1,14 @@
-Source: kalite-systemd-helper
+Source: eos-kalite-systemd-helper
 Section: desktop
 Priority: optional
 Maintainer: Niv Sardi <xaiki@debian.org>
 Build-Depends: debhelper (>=9), dh-systemd (>= 1.5)
 Standards-Version: 3.9.8
 Homepage: https://endlessm.com
-#Vcs-Git: git://anonscm.debian.org/collab-maint/kalite-systemd-helper.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/kalite-systemd-helper.git
+#Vcs-Git: git://anonscm.debian.org/collab-maint/eos-kalite-systemd-helper.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/eos-kalite-systemd-helper.git
 
-Package: kalite-systemd-helper
+Package: eos-kalite-systemd-helper
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A simple helper to activate a flatpak packaged kalite

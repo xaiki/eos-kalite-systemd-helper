@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: kalite-systemd-helper
+Upstream-Name: eos-kalite-systemd-helper
 Source: <url://example.com>
 
 Files: *
