@@ -1,5 +1,6 @@
 [Unit]
 Description=KA Lite Server
+ConditionPathExists=/var/lib/flatpak/app/org.learningequality.kalite/
 
 [Service]
 ExecStart=/usr/bin/flatpak run --no-desktop --env="LISTEN_PID=true" --command="kalite" org.learningequality.kalite start --foreground
