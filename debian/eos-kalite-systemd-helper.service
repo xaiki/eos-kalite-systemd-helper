@@ -4,7 +4,7 @@ ConditionPathExists=/var/lib/flatpak/app/org.learningequality.kalite
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/flatpak run --no-desktop --env="LISTEN_PID=true" --command="kalite" org.learningequality.kalite start --foreground
+ExecStart=/usr/bin/flatpak run --no-desktop --command="kalite" org.learningequality.kalite start --foreground
 User=kalite
 
 PrivateTmp=yes
