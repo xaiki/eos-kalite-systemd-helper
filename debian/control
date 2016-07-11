@@ -1,4 +1,4 @@
-Source: eos-kalite-systemd-helper
+Source: eos-kalite-system-helper
 Section: desktop
 Priority: optional
 Maintainer: Niv Sardi <xaiki@endlessm.com>
@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 Homepage: https://endlessm.com
 Vcs-Git: git://github.com/endlessm/eos-kalite-systemd-helper.git
 
-Package: eos-kalite-systemd-helper
+Package: eos-kalite-system-helper
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A simple helper to activate a flatpak packaged kalite

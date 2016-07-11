@@ -1,5 +1,5 @@
-eos-kalite-systemd-helper for Debian
---------------------------------
+eos-kalite-system-helper
+------------------------
 
 This package uses dh_systemd to automate creation and registration of the
 service and socket file, if it looks misty check the docs.
