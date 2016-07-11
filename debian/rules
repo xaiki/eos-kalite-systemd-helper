@@ -3,8 +3,12 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-dest=debian/tmp
-bindir=${dest}/usr/bin
+DEBIAN_NAME := $(shell dpkg-parsechangelog | sed -n 's/^Source: *\(.*\)$$/\1/ p')
 
 %:
 	dh $@ --with systemd
+
+override_dh_auto_install:
+	install -d debian/$(DEBIAN_NAME)/usr/lib/tmpfiles.d
+	install -p -m0644 debian/eos-kalite-system-helper.conf debian/$(DEBIAN_NAME)/usr/lib/tmpfiles.d
+	dh_auto_install $@
